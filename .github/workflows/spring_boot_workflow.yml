@@ -20,12 +20,10 @@ jobs:
         java-version: '11'
 
     - name: Add execute permission to mvnw
-      run: chmod +x ./sltsp_astro/mvnw
-      working-directory: ./sltsp_astro
+      run: chmod +x ./mvnw
 
     - name: Build with Maven
-      run: ./sltsp_astro/mvnw clean install
-      working-directory: ./sltsp_astro
+      run: ./mvnw clean install
 
   deploy:
     runs-on: ubuntu-latest
