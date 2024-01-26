@@ -34,7 +34,7 @@ jobs:
 
     steps:
     - name: Deploy to Heroku
-      uses: tarunkilaparti/sltsp_astro@latest
+      uses: tarunkilaparti/sltsp_astro@main
       with:
         heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
         heroku_app_name: 'sltsp_astro'
