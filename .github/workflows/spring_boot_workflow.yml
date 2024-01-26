@@ -21,9 +21,11 @@ jobs:
 
     - name: Add execute permission to mvnw
       run: chmod +x ./mvnw
+      working-directory: .
 
     - name: Build with Maven
       run: ./mvnw clean install
+      working-directory: .
 
   deploy:
     runs-on: ubuntu-latest
